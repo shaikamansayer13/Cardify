@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flexs">
+      <!-- Search Input -->
+      <input class="inp" type="text" placeholder="Search..." />
+      <button id="showFormBtn">➕ Add User</button>
+
+      <!-- Cards Container -->
+      <div class="flex"></div>
+      <div class="result"></div>
+    </div>
+
+    <!-- Modal overlay -->
+    <div class="modal hidden" id="modal">
+      <div class="form-box">
+        <h2>Add New User</h2>
+        <input type="text" id="name" placeholder="Enter name" />
+        <input type="text" id="pic" placeholder="Enter image URL" />
+        <textarea id="info" rows="3" placeholder="Enter info"></textarea>
+        <div class="form-actions">
+          <button class="b" id="addUser">Add</button>
+          <button class="b" id="cancelForm">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
